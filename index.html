@@ -4,16 +4,17 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>middleman</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A static site generator using the power of ruby.">
+		<meta name="author" content="Janson Hartliep">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<!--<link rel="stylesheet" href="css/theme/default.css" id="theme">-->
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -31,62 +32,126 @@
 	<body>
 
 		<div class="reveal">
-
+     
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>MiddlemanApp</h1>
+          <h3>Ruby static-site generator w/ sanity.</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>by Janson Hartliep / <a href="http://twitter.com/ninja_jason">@ninja_jason</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
+					<h2>There Are Many Like It, But This One Is Mine</h2>
 					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
+            There are a ridiculous number of static site generators. 
 					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Possibilities</h2>
+            <p>or: just what I tried.</p>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+            <h2>nanoc</h2>
+            <p><a href="http://nanoc.stoneship.org/">nanoc.stoneship.org</a></p>
+            <ul>
+              <li>mature, and well maintained</li>
+              <li>too big, too powerful, too flexible</li>
+            </ul>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
+            <h2>jekyll</h2>
+            <p><a href="http://jekyllrb.com/">http://jekyllrb.com/</a></p>
+            <ul>
+              <li>tied to gh-pages</li>
+              <li>non-standard folder structure</li>
+              <li>lotsa YAML front-matter</li>
+              <li>stagnant (until recently)</li>
+            </ul>
+          </section>
+					<section>
+            <h2>frank</h2>
+            <p><a href="https://github.com/blahed/frank">https://github.com/blahed/frank</a></p>
+            <ul>
+              <li>sinatra small & lightweight</li>
+              <li>cool built-in helpers</li>
+              <li>stagnant</li> 
+            </ul>
 					</section>
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+            <h2>serve</h2>
+            <p><a href="http://get-serve.com/">http://get-serve.com/</a></p>
+            <ul>
+              <li>the View portion of Rails' MVC</li>
+              <li>designed for "design-first" rails prototyping</li>
+              <li>stagnant</li>
+              <li>may as well use Rails</li>
+            </ul>
+          </section>
 				</section>
 
+        <section>
+          <h2>middleman</h2>
+          <p>Middleman is a command-line tool for creating static websites using all the shortcuts and tools of the modern web development environment.</p>
+          <p><a href="http://middlemanapp.com/">http://middlemanapp.com/</a></p>
+          <ul>
+            <li>sinatra based</li>
+            <li>hugely active development</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>middleman pros</h2>
+          <h3>how I work are the built-in defaults (or really easy to add)</h3>
+          <ul>
+            <li>haml</li>
+            <li>sass</li>
+            <li>bundler</li>
+            <li>semi-sane folder structure (less so recently)</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>middleman pros</h2>
+          <h3>rails-esque helpers</h3>
+          <ul>
+            <li>padrino based <a href="http://www.padrinorb.com/guides/application-helpers">padrinorb.com</a></li>
+            <li>with some niceties</li>
+            <li>filters like :markdown & :javascript</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>middleman pros</h2>
+          <h3>optional extensions usually just work</h3>
+          <ul>
+            <li>compass</li>
+            <li>susy</li>
+            <li>middleman-livereload</li>
+            <li>middleman-deploy</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>middleman cons</h2>
+          <ul>
+            <li>not a 5min drop into larger projects</li>
+            <li>rvm or rbenv</li>
+            <li>not the best docs</li>
+            <li>not the best for larger sites</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>show & tell</h2>
+        </section>
+
+        <!--
 				<section>
 					<h2>Point of View</h2>
 					<p>
@@ -335,6 +400,7 @@ function linkify( selector ) {
 					<h1>THE END</h1>
 					<h3>BY Hakim El Hattab / hakim.se</h3>
 				</section>
+        -->
 
 			</div>
 
